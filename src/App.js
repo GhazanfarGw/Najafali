@@ -13,7 +13,6 @@ import {
   Mail,
   Menu,
   X,
-  ShirtIcon,
 } from "lucide-react";
 
 function StitchDivider() {
@@ -62,28 +61,6 @@ function PlatformCard({ icon: Icon, name, role, points }) {
           </li>
         ))}
       </ul>
-    </div>
-  );
-}
-
-function ProductCard({ name, category, swatch }) {
-  return (
-    <div className="bg-[#101B30] border border-[#2A3B57] rounded-lg overflow-hidden shadow-lg hover:border-[#4F9DE0]/50 transition-colors">
-      <div
-        className="h-36 flex items-center justify-center relative"
-        style={{ backgroundColor: swatch }}
-      >
-        <ShirtIcon className="w-14 h-14 text-[#0B1424]/30" strokeWidth={1} />
-        <span className="absolute top-2 right-2 font-mono text-[10px] uppercase tracking-widest bg-[#0B1424]/70 text-[#EDF2F9] px-2 py-0.5 rounded-sm">
-          Sample
-        </span>
-      </div>
-      <div className="p-4">
-        <p className="font-display text-base text-[#EDF2F9] tracking-wide">{name}</p>
-        <p className="font-mono text-[10px] uppercase tracking-widest text-[#6C93BF] mt-1">
-          {category}
-        </p>
-      </div>
     </div>
   );
 }
